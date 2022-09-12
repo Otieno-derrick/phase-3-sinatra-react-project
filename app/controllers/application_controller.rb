@@ -3,4 +3,8 @@ class ApplicationController < Sinatra::Base
 
   # Add your routes here
 
+  get '/' do
+    "Hello World"
+  end
+
 end
