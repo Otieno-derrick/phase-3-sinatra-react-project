@@ -3,7 +3,7 @@ class ApplicationController < Sinatra::Base
 
   # Add your routes here
 
-  post '/users' do
+  post '/add' do
     user = User.create(name: params[:name],
       username: params[:username],
       email: params[:email],
@@ -12,15 +12,19 @@ class ApplicationController < Sinatra::Base
   end
 
 
-  get '/users' do
+  get '/all/users' do
    users = User.all.order(:company_id)
    users.to_json(include: { company: {only: [:company]} })
+
   end
 
 
   patch '/users/:id' do
      users = User.find(params[:id])
-     user.update(name: params[:name])
+     user.update(name: params[:name],
+     username: params[:username],
+     email: params[:email],
+     phone: params[:phone])
      users.to_json(include: { company: {only: [:company]}})
   end
 
