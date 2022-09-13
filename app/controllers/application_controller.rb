@@ -12,7 +12,7 @@ class ApplicationController < Sinatra::Base
   end
 
 
-  get '/all/users' do
+  get '/users' do
    users = User.all.order(:company_id)
    users.to_json(include: { company: {only: [:company]} })
 
