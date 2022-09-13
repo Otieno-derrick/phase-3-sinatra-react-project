@@ -1,7 +1,7 @@
 # Phase 3 Project Guidelines
 
 # link to frot end
-## https://github.com/Otieno-derrick/phase-3-project-frondend
+## `https://github.com/Otieno-derrick/phase-3-project-frondend`
 
 
 ## Learning Goals
