@@ -1,5 +1,9 @@
 # Phase 3 Project Guidelines
 
+# link to frot end
+## https://github.com/Otieno-derrick/phase-3-project-frondend
+
+
 ## Learning Goals
 
 - Build a web basic API with Sinatra and Active Record to support a React
