@@ -5,6 +5,6 @@ end
 
 
 
-class Company < ActiveRecord::Base
-    has_many :users
-end
+# class Company < ActiveRecord::Base
+#     has_many :users
+# end

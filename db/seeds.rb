@@ -1,7 +1,6 @@
 puts "🌱 Seeding spices..."
 
 # Seed your database here
-  Company.create(company_name: 'CodeWorld')
   response = RestClient.get 'http://localhost:3002/users'
   users = JSON.parse(response)
   users.each do |user|
